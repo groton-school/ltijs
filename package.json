@@ -1,6 +1,6 @@
 {
   "name": "@groton/ltijs",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "description": "Run ltijs as a service on Google Cloud Run",
   "homepage": "https://github.com/groton-school/ltijs#readme",
