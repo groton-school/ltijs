@@ -1,6 +1,6 @@
 {
   "name": "@groton/ltijs-google-cloud-logging",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An ltijs Logger for Google Cloud Logging",
   "keywords": [
     "ltijs",
