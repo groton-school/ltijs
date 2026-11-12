@@ -1,5 +1,5 @@
 {
   "path": ".",
   "tag-prefix": "firestore/",
-  "releaseCommitMessageFormat": "chore(firestore): @groton/ltijs-firestore@{{currentTag}}"
+  "releaseCommitMessageFormat": "chore: @groton/ltijs-firestore@{{currentTag}}"
 }
