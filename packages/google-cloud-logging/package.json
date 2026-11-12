@@ -1,0 +1,46 @@
+{
+  "name": "@groton/ltijs-google-cloud-logging",
+  "version": "0.0.0",
+  "description": "An ltijs Logger for Google Cloud Logging",
+  "keywords": [
+    "ltijs",
+    "lti",
+    "google cloud",
+    "google",
+    "logging"
+  ],
+  "homepage": "https://github.com/groton-school/ltijs/tree/main/packages/google-cloud-logging#readme",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/groton-school/ltijs.git",
+    "directory": "packages/google-cloud-logging"
+  },
+  "author": {
+    "name": "Seth Battis",
+    "email": "sbattis@groton.org"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "del ./dist",
+    "build:compile": "tsc",
+    "prepack": "run-s build",
+    "release": "commit-and-tag-version --noBumpWhenEmptyChanges"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^12.3.1"
+  },
+  "devDependencies": {
+    "@battis/workspace": "catalog:dev",
+    "@tsconfig/node-lts": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "del-cli": "catalog:dev",
+    "npm-run-all": "catalog:dev",
+    "typescript": "catalog:dev"
+  },
+  "peerDependencies": {
+    "ltijs": "catalog:prod"
+  }
+}

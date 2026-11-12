@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tag-prefix": "ltiaas/",
+  "releaseCommitMessageFormat": "chore(ltiaas): @groton/ltijs-ltiaas@{{currentTag}}"
+}

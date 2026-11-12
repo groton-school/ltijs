@@ -1,0 +1,48 @@
+{
+  "name": "@groton/ltijs-ltiaas-firestore",
+  "version": "0.0.0",
+  "keywords": [
+    "ltijs",
+    "ltiaas",
+    "google cloud",
+    "google",
+    "firestore"
+  ],
+  "homepage": "https://github.com/groton-school/ltijs/tree/main/packages/ltiaas-firestore#readme",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/groton-school/ltijs.git",
+    "directory": "packages/ltiaas-firestore"
+  },
+  "author": {
+    "name": "Seth Battis",
+    "email": "sbattis@groton.org"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "del ./dist",
+    "build:compile": "tsc",
+    "prepack": "run-s build",
+    "release": "commit-and-tag-version --noBumpWhenEmptyChanges"
+  },
+  "dependencies": {
+    "@battis/lazy-firestore": "catalog:prod",
+    "@google-cloud/firestore": "catalog:prod",
+    "@groton/ltijs-firestore": "workspace:",
+    "@groton/ltijs-ltiaas": "workspace:"
+  },
+  "devDependencies": {
+    "@battis/workspace": "catalog:dev",
+    "@tsconfig/node-lts": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "del-cli": "catalog:dev",
+    "npm-run-all": "catalog:dev",
+    "typescript": "catalog:dev"
+  },
+  "peerDependencies": {
+    "ltijs": "catalog:prod"
+  }
+}

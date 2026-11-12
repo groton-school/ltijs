@@ -1,0 +1,41 @@
+{
+  "name": "@groton/ltijs-ltiaas",
+  "version": "0.0.0",
+  "keywords": [
+    "ltijs",
+    "lti",
+    "ltiaas",
+    "service"
+  ],
+  "homepage": "https://github.com/groton-school/ltijs/tree/main/packages/ltiaas#readme",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/groton-school/ltijs.git",
+    "directory": "packages/ltiaas"
+  },
+  "author": {
+    "name": "Seth Battis",
+    "email": "sbattis@groton.org"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "del ./dist",
+    "build:compile": "tsc",
+    "prepack": "run-s build",
+    "release": "commit-and-tag-version --noBumpWhenEmptyChanges"
+  },
+  "devDependencies": {
+    "@battis/workspace": "catalog:dev",
+    "@tsconfig/node-lts": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "del-cli": "catalog:dev",
+    "npm-run-all": "catalog:dev",
+    "typescript": "catalog:dev"
+  },
+  "peerDependencies": {
+    "ltijs": "catalog:prod"
+  }
+}

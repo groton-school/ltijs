@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tag-prefix": "google-cloud-logging/",
+  "releaseCommitMessageFormat": "chore(google-cloud-logging): @groton/ltijs-google-cloud-logging@{{currentTag}}"
+}
