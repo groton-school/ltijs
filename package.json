@@ -1,26 +1,19 @@
 {
   "name": "@groton/ltijs",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "author": {
-    "name": "Seth Battis",
-    "email": "sbattis@groton.org"
-  },
+  "homepage": "https://github.com/groton-school/ltijs#readme",
   "repository": {
     "type": "github",
     "url": "https://github.com/groton-school/ltijs.git"
   },
-  "homepage": "https://github.com/groton-school/ltijs#readme",
   "license": "GPL-3.0",
-  "type": "module",
-  "devDependencies": {
-    "@battis/commit": "^0.0.11",
-    "@battis/eslint": "^3.0.8",
-    "@battis/monorepo": "^1.0.0",
-    "@battis/prettier": "^2.0.11",
-    "lerna": "^9.0.7"
+  "author": {
+    "name": "Seth Battis",
+    "email": "sbattis@groton.org"
   },
-  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3",
+  "type": "module",
   "scripts": {
     "build": "run-s build:*",
     "build:compile": "lerna run build",
@@ -31,5 +24,13 @@
     "release:login": "pnpm login",
     "release:publish": "pnpm publish -r --access public"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@battis/commit": "^0.0.11",
+    "@battis/eslint": "^3.0.8",
+    "@battis/monorepo": "^1.0.0",
+    "@battis/prettier": "^2.0.11",
+    "lerna": "^9.0.7"
+  },
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
 }
